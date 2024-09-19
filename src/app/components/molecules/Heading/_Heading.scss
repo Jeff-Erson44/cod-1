@@ -1,2 +1,49 @@
 @import '../../../style/settings.scss';
+.container__heading{
+    h1{
+        @include hero;
+        text-align: center;
+        &::before{
+            width: 103px;
+            height: 80px;
+            content: '';
+            background-image: url("/images/icons/flash.svg");
+            display: block;
+            position: relative;
+            top: 218px;
+            left: 28px;
+            z-index: 99;
+        }
+        span{
+            font-style: italic;
+            &:first-of-type{
+                margin: 0 45px 28px;
+            }
+        }
+    }
+    .mobile{
+        display: none;
+    }
+}
 
+@media screen and (max-width: 450px){
+    .desktop{
+        display: none;
+    }
+    .container__heading{
+        h1.mobile{
+            display: block;
+            font-size: 74px;
+            line-height: 82px;
+            text-align: left;
+            &::before{
+                transform: rotateZ(21deg);
+                left: 236px;
+                top: 81px;
+            }
+            span{
+                margin : 0;
+            }
+        }
+    }
+}

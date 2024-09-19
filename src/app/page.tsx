@@ -1,10 +1,9 @@
-import { Heading } from "./components/molecules/Heading/Heading";
+import { Hero } from "./components/organisms/Hero/Hero";
 
 export default function Home() {
   return (
   <>
-    <h1>Hello World</h1>
-    <Heading />
+    <Hero />
   </>
   );
 }

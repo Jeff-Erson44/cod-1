@@ -1,0 +1,15 @@
+@import '../../../style/settings.scss';
+
+.container__cardHero{
+    &::before{
+        width: 70px;
+        height: 73px;
+        content: '';
+        background-image: url("/images/icons/clashofdev_logo.svg");
+        display: block;
+        position: relative;
+        top: 87.24px;
+        left: 252px;
+        z-index: 99;
+    }
+}

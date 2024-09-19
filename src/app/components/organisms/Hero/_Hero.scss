@@ -1,0 +1,18 @@
+@import '../../../style/settings.scss';
+
+.container__hero{
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 141px;
+}
+
+@media screen and (max-width: 450px) {
+    .container__hero{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 95px;
+    }
+}
