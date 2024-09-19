@@ -10,6 +10,7 @@ nav{
             &:first-of-type{
                 transform: rotateZ(8deg);
                 a{
+                    @include body;
                     background: $black;
                     color: $purpleLight;
                     padding: 7.61px 12.72px;
