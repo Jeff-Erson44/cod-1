@@ -1,0 +1,22 @@
+@import '../../../style/settings.scss';
+
+nav{
+    grid-column: 1/-1;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            &:first-of-type{
+                transform: rotateZ(8deg);
+                a{
+                    background: $black;
+                    color: $purpleLight;
+                    padding: 7.61px 12.72px;
+                    border-radius: 80px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
