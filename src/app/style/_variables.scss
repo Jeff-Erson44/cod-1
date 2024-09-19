@@ -1,0 +1,27 @@
+$black :  hsl(60, 3%, 15%, 1);
+
+// classe typo 
+
+@mixin body {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+@mixin bodyBold {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+@mixin hero{
+    font-size: 115px;
+    line-height: 123px;
+    font-weight: 600;
+}
+
+@mixin heroMobile{
+    font-style: 74px;
+    line-height: 82px;
+    font-weight: 600;
+}

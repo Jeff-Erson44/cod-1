@@ -1,0 +1,24 @@
+$desktop-columns: 16;
+$desktop-margin: 32px;
+$desktop-gutter: 20px;
+
+$mobile-columns: 8;
+$mobile-margin: 12px;
+$mobile-gutter: 8px;
+
+
+body {
+    display: grid;
+    grid-template-columns: repeat($desktop-columns, 1fr);
+    gap: $desktop-gutter;
+    padding: 0 $desktop-margin;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: repeat($mobile-columns, 1fr);
+        gap: $mobile-gutter;
+        padding: 0 $mobile-margin;
+    }
+}
