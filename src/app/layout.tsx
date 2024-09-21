@@ -11,7 +11,7 @@ const inter = Inter ({
 
 export const metadata: Metadata = {
   title: "Clash of Dev - Jeff_Erson",
-  description: "Clash of dev",
+  description: "Clash of dev partie 1",
 };
 
 export default function RootLayout({
