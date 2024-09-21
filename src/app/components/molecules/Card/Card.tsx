@@ -29,22 +29,20 @@ export const Card: React.FC<CardProps> = ({ item }) => {
                         height={696}
                     />
                 </div>
-                <div className="container__card__main__content">
-                    {item.content.map(content => (
-                        <div key={content.id}>
-                            <p>
-                                {content.para_1[0].text_0}
-                                <strong>{content.para_1[0].strong}</strong>
-                                {content.para_1[0].text_1}
-                            </p>
-                            <p>
-                                {content.para_2[0].text_0}
-                                <strong>{content.para_2[0].strong}</strong>
-                                {content.para_2[0].text_1}
-                            </p>
-                        </div>
-                    ))}
-                </div>
+                {item.content.map(content => (
+                    <div className="container__card__main__content" key={content.id}>
+                        <p>
+                            {content.para_1[0].text_0}
+                            <strong>{content.para_1[0].strong}</strong>
+                            {content.para_1[0].text_1}
+                        </p>
+                        <p>
+                            {content.para_2[0].text_0}
+                            <strong>{content.para_2[0].strong}</strong>
+                            {content.para_2[0].text_1}
+                        </p>
+                    </div>
+                ))}
             </div>
         </article>
     );

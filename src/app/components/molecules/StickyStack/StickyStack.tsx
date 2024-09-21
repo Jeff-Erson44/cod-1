@@ -4,14 +4,14 @@ import React from 'react';
 
 type StickyStackProps = {
     children : ReactNode;
-    height?: string 
+
 }
 
-export const StickyStack: React.FC<StickyStackProps> = ({children, height = "100vh"}) => {
+export const StickyStack: React.FC<StickyStackProps> = ({children}) => {
     return (
         <div className='container__stickyStack'>
             {React.Children.map(children, (child) => (
-                <div className="container__stickyStack--element" style={{ height }}>
+                <div className="container__stickyStack--element" >
                     {child}
                 </div>
             ))}

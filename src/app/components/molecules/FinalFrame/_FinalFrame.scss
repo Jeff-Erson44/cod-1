@@ -1,0 +1,11 @@
+@import '../../../style/settings.scss';
+
+.container__finalFrame{
+    background: $black;
+    height: 900px;
+    grid-column: 1/-1;
+    width: 96%;
+    h2{
+        margin-bottom: 100px;
+    }
+}

@@ -49,3 +49,47 @@
         }
     }
 }
+
+@media screen and (max-width: 450px){
+    .container__card{
+        padding: 40px 47px;
+        display: flex;
+        flex-direction: column;
+        &__header{
+            margin: 0 0 40px ;
+            & ul:first-of-type{
+                display: flex;
+                & li:first-of-type {
+                    max-width: 85px;
+                }
+                & li {
+                    width: 180px;
+                }
+            }
+            & ul:last-of-type{
+                display: none;
+            }
+        }
+        &__main{
+            flex-direction: column;
+            &__image{
+                margin-bottom: 20px;
+                img{
+                    width: 272px;
+                    height: 190px;
+                }
+            }
+            &__content{
+                margin-top: 0;
+                width: 272px;
+            }
+            &::after{
+                width: 120px;
+                height: 120px;
+                background-size: cover;
+                right: -48px;
+                bottom: -105px;
+            }
+        }
+    }
+}
