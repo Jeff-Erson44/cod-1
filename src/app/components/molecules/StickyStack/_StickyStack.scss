@@ -1,0 +1,16 @@
+@import '../../../style/settings.scss';
+
+.container__stickyStack {
+    position: relative;
+    grid-column: 1/-1;
+    &--element{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    }
+}

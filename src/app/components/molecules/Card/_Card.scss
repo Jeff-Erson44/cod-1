@@ -1,0 +1,51 @@
+@import '../../../style/settings.scss';
+
+.container__card{
+    grid-column: 1/-1;
+    padding: 40px;
+    background: hsl(234, 8%, 100%, 1);
+    border-radius: 60px;
+    overflow: hidden;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 40px 87px;
+        & ul:first-of-type{
+            display: flex;
+            & li {
+                max-width: 242px;
+                text-transform: uppercase;
+                @include bodyBold;
+            }
+            & li:first-of-type{
+                width: 155px;
+                @include body;
+            }
+        }
+    }
+    &__main{
+        display: flex;
+        gap: 20px;
+        position: relative;
+        &__content{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            margin-top: 26px;
+            width: 241px;
+            @include body;
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 390px;
+            height: 390px;
+            background-image: url('/images/icons/sticker.png');
+            background-repeat: no-repeat;
+            z-index: 99;
+            position: absolute;
+            right: -105px;
+            bottom: -130px;
+        }
+    }
+}

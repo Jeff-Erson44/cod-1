@@ -1,9 +1,9 @@
-import './_CardHero.scss'
+import './_ImageHero.scss'
 import Image from 'next/image'
 
-export const CardHero = () => {
+export const ImageHero = () => {
     return (
-        <div className='container__cardHero'>
+        <div className='container__ImageHero'>
             <Image 
                 src="/images/icons/card.png"
                 alt="card icon"
