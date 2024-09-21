@@ -1,19 +1,14 @@
-import { StickyStack } from '../../molecules/StickyStack/StickyStack'
-import './_CardList.scss'
+import { StickyStack } from '../../molecules/StickyStack/StickyStack';
+import './_CardList.scss';
+import { cardData } from '@/app/data/Card.data';
+import { Card } from '../../molecules/Card/Card';
 
-
-export const CardList = () =>{
-    return(
+export const CardList = () => {
+    return (
         <StickyStack>
-            <div style={{ backgroundColor: 'lightcoral' }}>
-                <h1>Section 1</h1>
-            </div>
-            <div style={{ backgroundColor: 'lightblue' }}>
-                <h1>Section 2</h1>
-            </div>
-            <div style={{ backgroundColor: 'lightgreen' }}>
-                <h1>Section 3</h1>
-            </div>
+            {cardData.map((item, index) => (
+                <Card key={index} item={item} />
+            ))}
         </StickyStack>
-    )
-}
+    );
+};

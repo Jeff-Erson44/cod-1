@@ -1,37 +1,51 @@
-import './_Card.scss'
-import Image from 'next/image'
+import './_Card.scss';
+import Image from 'next/image';
+import { CardItem } from '../../../type/Card.types'
 
-export const Card = () => {
+interface CardProps {
+    item: CardItem;
+}
+
+export const Card: React.FC<CardProps> = ({ item }) => {
     return (
-        <article className='container__card'>
-            <div className='container__card__header'>
+        <article className="container__card">
+            <div className="container__card__header">
                 <ul>
-                    <li>Design <br/> /6pts</li>
-                    <li>L&apos;artiste de renom</li>
+                    <li>{item.type} <br /> /{item.points}pts</li>
+                    <li>{item.title}</li>
                 </ul>
                 <ul>
-                    <li>@Maislina</li>
+                    {item.person.map(person => (
+                        <li key={person.id}>{person.name}</li>
+                    ))}
                 </ul>
             </div>
-            <div className='container__card__main'>
-                <div className='container__card__main__image'>
+            <div className="container__card__main">
+                <div className="container__card__main__image">
                     <Image
-                        src="/images/card1.png"
-                        alt=""
+                        src={item.image}
+                        alt={item.title}
                         width={987}
                         height={696}
                     />
                 </div>
-                <div className='container__card__main__content'>
-                    <p>
-                    Le design, c’est son terrain de jeu. 
-                    Il maîtrise et retranscrit correctement chaque pixel de la maquette.
-                    </p>
-                    <p>
-                    Virtuose des couleurs il ne se trompe jamais de code HEX, de spacing ou de border-radius ; Figma n’a aucun secret pour ce Dev de talent.
-                    </p>
+                <div className="container__card__main__content">
+                    {item.content.map(content => (
+                        <div key={content.id}>
+                            <p>
+                                {content.para_1[0].text_0}
+                                <strong>{content.para_1[0].strong}</strong>
+                                {content.para_1[0].text_1}
+                            </p>
+                            <p>
+                                {content.para_2[0].text_0}
+                                <strong>{content.para_2[0].strong}</strong>
+                                {content.para_2[0].text_1}
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </article>
-    )
-} 
+    );
+};

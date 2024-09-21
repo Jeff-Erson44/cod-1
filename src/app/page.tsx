@@ -1,5 +1,5 @@
 import { HorizontalText } from "./components/atoms/HorizontalText/HorizontalText";
-import { Card } from "./components/molecules/Card/Card";
+import { CardList } from "./components/organisms/CardList/CardList";
 import { Hero } from "./components/organisms/Hero/Hero";
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
   <>
     <Hero />
     <HorizontalText />
-    <Card />
+    <CardList />
   </>
   );
 }
