@@ -22,6 +22,10 @@
                 @include body;
             }
         }
+        &__cursor{
+            display: flex;
+            gap: 20px;
+        }
     }
     &__main{
         display: flex;
@@ -55,8 +59,10 @@
         padding: 40px 47px;
         display: flex;
         flex-direction: column;
+        height: 600px;
         &__header{
             margin: 0 0 40px ;
+            height: 50px;
             & ul:first-of-type{
                 display: flex;
                 & li:first-of-type {
@@ -66,8 +72,12 @@
                     width: 180px;
                 }
             }
-            & ul:last-of-type{
-                display: none;
+            &__cursor{
+                flex-direction: column;
+                position: relative;
+                top: 60px;
+                right: 60px;
+                z-index: 99;
             }
         }
         &__main{
@@ -84,8 +94,8 @@
                 width: 272px;
             }
             &::after{
-                width: 120px;
-                height: 120px;
+                width: 135px;
+                height: 135px;
                 background-size: cover;
                 right: -48px;
                 bottom: -105px;

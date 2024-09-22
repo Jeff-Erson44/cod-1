@@ -1,6 +1,9 @@
 export type Person = {
     id: number;
     name: string;
+    color: string;
+    border: string;
+    iconColor: string;
 };
 
 export type Content = {
@@ -28,4 +31,5 @@ export type CardItem = {
     content: Content[];
     sticker: string;
     image: string;
+    background: string;
 };

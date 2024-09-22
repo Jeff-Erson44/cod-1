@@ -6,16 +6,7 @@
     &--element{
     position: sticky;
     top: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
+    z-index: 1; 
     }
 }
 
-@media screen and (max-width: 450px){
-    .container__stickyStack{
-        &--element{
-            height: 600px;
-        }
-    }
-}

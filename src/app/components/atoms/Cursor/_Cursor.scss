@@ -1,0 +1,15 @@
+@import '../../../style/settings.scss';
+
+.container__cursor{
+    &__text{
+        border-radius: 18px;
+        border-top-left-radius: 1.5px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        padding: 0 12px;
+        color: $white;
+        margin-left: 13px;
+    }
+}

@@ -7,7 +7,7 @@ type StickyStackProps = {
 
 }
 
-export const StickyStack: React.FC<StickyStackProps> = ({children}) => {
+export const StickyStack = ({children}:StickyStackProps) => {
     return (
         <div className='container__stickyStack'>
             {React.Children.map(children, (child) => (

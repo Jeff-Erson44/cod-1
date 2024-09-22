@@ -1,24 +1,32 @@
 import './_Card.scss';
 import Image from 'next/image';
 import { CardItem } from '../../../type/Card.types'
+import { Cursor } from '../../atoms/Cursor/Cursor';
 
 interface CardProps {
     item: CardItem;
 }
 
-export const Card: React.FC<CardProps> = ({ item }) => {
+export const Card = ({ item } :CardProps) => {
+
     return (
-        <article className="container__card">
+        <article className="container__card" style={{ backgroundColor: item.background}}>
             <div className="container__card__header">
                 <ul>
                     <li>{item.type} <br /> /{item.points}pts</li>
                     <li>{item.title}</li>
                 </ul>
-                <ul>
-                    {item.person.map(person => (
-                        <li key={person.id}>{person.name}</li>
-                    ))}
-                </ul>
+                <div className="container__card__header__cursor">
+                {item.person.map(person => (
+                    <Cursor 
+                        key={person.id}
+                        name={person.name}         
+                        color={person.color} 
+                        border={person.border}
+                        iconColor={person.iconColor}        
+                    />
+                ))}
+                </div>
             </div>
             <div className="container__card__main">
                 <div className="container__card__main__image">

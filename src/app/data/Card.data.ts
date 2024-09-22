@@ -7,7 +7,10 @@ export const cardData = [
     person: [
         {
         id: 1,
-        name: "@Maislina",
+        name: "Maislina",
+        color: "#9ea8ff",
+        border: "#8a93e3",
+        iconColor:"#9ea8ff",
         }
     ],
     content: [
@@ -33,6 +36,7 @@ export const cardData = [
     ],
     sticker: '/images/icons/sticker.png',
     image: '/images/card1.png',
+    background: '#ebedff'
     },
     {
     id: 2,
@@ -42,7 +46,10 @@ export const cardData = [
     person: [
         {
         id: 1,
-        name: "@Chris",
+        name: "Chris",
+        color: "#f589ba",
+        border: "#d6699a",
+        iconColor:"#f589ba",
         }
     ],
     content: [
@@ -68,6 +75,7 @@ export const cardData = [
     ],
     sticker: '/images/icons/sticker2.png',
     image: '/images/card2.png',
+    background: '#ffebf4'
     },
     {
     id: 3,
@@ -77,11 +85,17 @@ export const cardData = [
     person: [
         {
         id: 1,
-        name: "@Maislina",
+        name: "Maislina",
+        color: "#a1b87d",
+        border: "#95ad6d",
+        iconColor:"#a1b87d",
         },
         {
         id: 2,
-        name: "@Chris"
+        name: "Chris",
+        color: "#a1b87d",
+        border: "#95ad6d",
+        iconColor:"#a1b87d",
         }
     ],
     content: [
@@ -107,6 +121,7 @@ export const cardData = [
     ],
     sticker: '/images/icons/sticker3.png',
     image: '/images/card3.png',
+    background: '#edffd1'
     },
     {
     id: 4,
@@ -116,11 +131,17 @@ export const cardData = [
     person: [
         {
         id: 1,
-        name: "@Maislina",
+        name: "Maislina",
+        color: "#6b92bf",
+        border: "#446b99",
+        iconColor:"#6b92bf",
         },
         {
         id: 2,
-        name: "@Chris"
+        name: "Chris",
+        color: "#6b92bf",
+        border: "#446b99",
+        iconColor:"#6b92bf",
         }
     ],
     content: [
@@ -146,6 +167,7 @@ export const cardData = [
     ],
     sticker: '/images/icons/sticker4.png',
     image: '/images/card4.png',
+    background: '#b8d9ff'
     },
     {
     id: 5,
@@ -155,11 +177,17 @@ export const cardData = [
     person: [
         {
         id: 1,
-        name: "@Maislina",
+        name: "Maislina",
+        color: "#c9c38d",
+        border: "#c2bb84",
+        iconColor:"#c9c38d",
         },
         {
         id: 2,
-        name: "@Chris"
+        name: "Chris",
+        color: "#c9c38d",
+        border: "#c2bb84",
+        iconColor:"#c9c38d",
         }
     ],
     content: [
@@ -185,6 +213,7 @@ export const cardData = [
     ],
     sticker: '/images/icons/sticker5.png',
     image: '/images/card5.png',
+    background: '#fffac2'
     },
     {
     id: 6,
@@ -194,11 +223,17 @@ export const cardData = [
     person: [
         {
         id: 1,
-        name: "@Maislina",
+        name: "Maislina",
+        color: "#f28063",
+        border: "#d46d54",
+        iconColor:"#f28063",
         },
         {
         id: 2,
-        name: "@Chris"
+        name: "Chris",
+        color: "#f28063",
+        border: "#d46d54",
+        iconColor:"#f28063",
         }
     ],
     content: [
@@ -224,5 +259,6 @@ export const cardData = [
     ],
     sticker: '/images/icons/sticker6.png',
     image: '/images/card6.png',
+    background: '#ffbead'
     }
 ];
