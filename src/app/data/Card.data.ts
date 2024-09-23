@@ -104,7 +104,7 @@ export const cardData = [
         para_1: [
             {
             id: 1,
-            text_0: "Aucun composant ne s’affiche sans une",
+            text_0: "Aucun composant ne s’affiche sans une ",
             strong: "animation soignée.",
             text_1: " Ses transitions sont légères, dynamiques et fluides, captivant l'utilisateur à chaque interaction."
             }

@@ -1,7 +1,11 @@
 @import '../../../style/settings.scss';
 
 nav{
-    grid-column: 1/-1;
+    width: 97%;
+    position: fixed;
+    top: 20px;
+    left: 32px;
+    z-index: 999;
     ul{
         display: flex;
         justify-content: space-between;
@@ -19,5 +23,12 @@ nav{
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 450px){
+    nav{
+        top: 12px;
+        width: 88%;
     }
 }

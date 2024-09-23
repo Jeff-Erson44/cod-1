@@ -1,0 +1,40 @@
+@import '../../../style/settings.scss';
+
+.container__button{
+    color: $black;
+    background: $white;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 60px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    width: max-content;
+    height: 55px;
+    &::before{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url('/images/icons/greensticker.svg');
+        background-repeat: no-repeat;
+        z-index: 99;
+        position: relative;
+        left: -5px;
+        top:-25px;
+    }
+    &::after{
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url('/images/icons/bluesticker.svg');
+        background-repeat: no-repeat;
+        z-index: 99;
+        position: relative;
+        right: 0px;
+        bottom:-30px;
+    }
+}

@@ -13,7 +13,7 @@ export const Card = ({ item } :CardProps) => {
         <article className="container__card" style={{ backgroundColor: item.background}}>
             <div className="container__card__header">
                 <ul>
-                    <li>{item.type} <br /> /{item.points}pts</li>
+                    <li>{item.type} <br /> /{item.points} pts</li>
                     <li>{item.title}</li>
                 </ul>
                 <div className="container__card__header__cursor">

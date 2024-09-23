@@ -59,7 +59,7 @@
         padding: 40px 47px;
         display: flex;
         flex-direction: column;
-        height: 600px;
+        height: 550px;
         &__header{
             margin: 0 0 40px ;
             height: 50px;
@@ -91,14 +91,14 @@
             }
             &__content{
                 margin-top: 0;
-                width: 272px;
+                width: 275px;
             }
             &::after{
-                width: 135px;
-                height: 135px;
+                width: 150px;
+                height: 150px;
                 background-size: cover;
                 right: -48px;
-                bottom: -105px;
+                bottom: -140px;
             }
         }
     }

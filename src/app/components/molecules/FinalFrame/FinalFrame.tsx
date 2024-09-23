@@ -1,3 +1,4 @@
+import { Button } from '../../atoms/Button/Button'
 import './_FinalFrame.scss'
 
 export const FinalFrame = () =>{
@@ -7,6 +8,7 @@ export const FinalFrame = () =>{
             <h1>
                 Click Me ?  Might enter the finals 
             </h1>
+            <Button/>
         </section>
     )
 }

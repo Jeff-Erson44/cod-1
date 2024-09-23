@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google"
 import "./style/settings.scss";
-import { Scrollbar } from "./components/atoms/Scorllbar/Scrollbar";
 import { Navbar } from "./components/atoms/Navbar/Navbar";
 
 const inter = Inter ({
@@ -22,7 +21,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Scrollbar />
         <Navbar />
         {children}
       </body>
