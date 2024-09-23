@@ -11,5 +11,6 @@
         padding: 0 12px;
         color: $white;
         margin-left: 13px;
+        @include body;
     }
 }
