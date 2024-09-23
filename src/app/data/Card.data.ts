@@ -7,7 +7,7 @@ export const cardData = [
     person: [
         {
         id: 1,
-        name: "Maislina",
+        name: "Maislina_",
         color: "#9ea8ff",
         border: "#8a93e3",
         iconColor:"#9ea8ff",
@@ -46,7 +46,7 @@ export const cardData = [
     person: [
         {
         id: 1,
-        name: "Chris",
+        name: "LLCoolChris",
         color: "#f589ba",
         border: "#d6699a",
         iconColor:"#f589ba",
@@ -85,14 +85,14 @@ export const cardData = [
     person: [
         {
         id: 1,
-        name: "Maislina",
+        name: "Maislina_",
         color: "#a1b87d",
         border: "#95ad6d",
         iconColor:"#a1b87d",
         },
         {
         id: 2,
-        name: "Chris",
+        name: "LLCoolChris",
         color: "#a1b87d",
         border: "#95ad6d",
         iconColor:"#a1b87d",
@@ -131,14 +131,14 @@ export const cardData = [
     person: [
         {
         id: 1,
-        name: "Maislina",
+        name: "Maislina_",
         color: "#6b92bf",
         border: "#446b99",
         iconColor:"#6b92bf",
         },
         {
         id: 2,
-        name: "Chris",
+        name: "LLCoolChris",
         color: "#6b92bf",
         border: "#446b99",
         iconColor:"#6b92bf",
@@ -177,14 +177,14 @@ export const cardData = [
     person: [
         {
         id: 1,
-        name: "Maislina",
+        name: "Maislina_",
         color: "#c9c38d",
         border: "#c2bb84",
         iconColor:"#c9c38d",
         },
         {
         id: 2,
-        name: "Chris",
+        name: "LLCoolChris",
         color: "#c9c38d",
         border: "#c2bb84",
         iconColor:"#c9c38d",
@@ -223,14 +223,14 @@ export const cardData = [
     person: [
         {
         id: 1,
-        name: "Maislina",
+        name: "Maislina_",
         color: "#f28063",
         border: "#d46d54",
         iconColor:"#f28063",
         },
         {
         id: 2,
-        name: "Chris",
+        name: "LLCoolChris",
         color: "#f28063",
         border: "#d46d54",
         iconColor:"#f28063",
